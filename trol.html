@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+#body {display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+      background-color: rgb(188, 101, 114);
+      min-height: 100vh;
+       background: linear-gradient(135deg, #fe0665 0%, #c3cfe2 100%);
+    padding: 20px;}
+
+.container{ 
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+.form-box{
+    background-color: rgb(248, 3, 73); border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 20px; transition: transform 0.3s ease;
+}
+.form-box:hover{
+    transform: translateY(-5px);
+}
+
+h2{
+    color: #fcf7f7;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.input-fld{
+    
+    margin-bottom: 20px;
+    text-align: left;
+}
+label{
+    display: block;
+    margin-bottom: 8px;
+    color: #eee9e9;
+    font-weight: 500;
+    font-size: 14px;
+ }
+ input{width: 100%;
+padding: 10px 11px;
+border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ;
+}
+input:focus{
+    outline: none;
+      border-color: #043343;
+       box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
+}
+ button {
+            background: linear-gradient(to right, #080009, #e80448);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(45, 2, 24, 0.3);
+        }
+        
+        button:hover {
+               background: linear-gradient(to right, #000000, #bd0722);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
+        }
+    </style>
+
+</head>
+
+  <body id="body">
+     <div class="container">
+        <div class="form-box">  
+   <h2>how much you love your partner</h2>
+     <div class="input-fld"> 
+       <label> your name</label>
+   <input  id="urname" type="text" >
+     </div>
+
+     <div class="input-fld">  
+     <label> your partner</label>
+<input id="othername" type="text" >
+   
+</div>
+
+<button type="button" onclick=" trolfunction()">  sub</button> 
+   </div>
+   </div>
+
+<script>
+
+function trolfunction() {
+    let urname = document.getElementById("urname").value
+    let othername= document.getElementById("othername").value
+
+    if(urname !=="" && othername !=="") {
+        // Use window.open to avoid CORS issues with external sites
+        window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+    }
+}
+</script>
+
+</body>
+
+</html>
